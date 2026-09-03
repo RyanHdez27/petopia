@@ -1,0 +1,11 @@
+{
+  "title": "petopia",
+  "description": "Connects pet owners in Bogotá with caregivers, walkers, and vets, offering a digital pet record, service bookings, and a rewards club for discounts.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

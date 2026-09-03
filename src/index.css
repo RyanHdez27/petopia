@@ -1,0 +1,45 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Nunito:wght@700;800;900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-body: 'Open Sans', system-ui, -apple-system, sans-serif;
+  --font-brand: 'Nunito', 'Open Sans', system-ui, sans-serif;
+
+  /* Colores oficiales de marca Petopia */
+  --color-petopia-orange: #FD704E;
+  --color-petopia-orange-hover: #E85D3B;
+  --color-petopia-orange-light: #FFF2EE;
+  
+  --color-petopia-teal: #174C58;
+  --color-petopia-teal-dark: #0E4752;
+  --color-petopia-teal-light: #F0F6F7;
+  --color-petopia-teal-surface: #E3EFF1;
+  
+  --color-petopia-cream: #FFFFE9;
+  --color-petopia-cream-dark: #F7F5DC;
+  
+  --color-petopia-pink: #F4CCEE;
+  --color-petopia-pink-dark: #A23D92;
+  --color-petopia-pink-light: #FDF4FC;
+  
+  --color-petopia-text: #333333;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #333333;
+  background-color: #f8fafc;
+}
+
+.font-brand {
+  font-family: var(--font-brand);
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
