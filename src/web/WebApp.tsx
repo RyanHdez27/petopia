@@ -1,4 +1,5 @@
 import { useState } from "react"
+import PetopiaLogo from "../components/ui/PetopiaLogo"
 
 type WebPage = "dashboard" | "search" | "provider" | "petRecord" | "history"
 type BadgeT = "verified" | "pro" | "firstaid" | "ally" | "pending" | "expired"
@@ -74,9 +75,8 @@ function TopNav({
   return (
     <header className="fixed top-0 left-0 right-0 z-50 h-16 bg-white border-b border-slate-100 flex items-center gap-4 px-6 shadow-sm shadow-slate-100">
       {/* Logo */}
-      <button onClick={() => go("dashboard")} className="flex items-center gap-2 flex-shrink-0 mr-2">
-        <span className="text-2xl">🐾</span>
-        <span className="text-xl font-black text-[#174c58] font-brand tracking-tight">Petopia</span>
+      <button onClick={() => go("dashboard")} className="flex items-center gap-2 flex-shrink-0 mr-4 hover:opacity-85 transition-opacity">
+        <PetopiaLogo size="sm" />
       </button>
 
       {/* Nav links */}
