@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Nunito:wght@700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Nunito:wght@700;800;900&display=swap');
 @import 'tailwindcss';
 
 @theme {
@@ -16,11 +16,16 @@
   --color-petopia-teal-surface: #E3EFF1;
   
   --color-petopia-cream: #FFFFE9;
+  --color-petopia-cream-soft: #FFF9C4;
   --color-petopia-cream-dark: #F7F5DC;
   
   --color-petopia-pink: #F4CCEE;
+  --color-petopia-pink-soft: #FDE8F7;
   --color-petopia-pink-dark: #A23D92;
   --color-petopia-pink-light: #FDF4FC;
+
+  --color-petopia-green-soft: #E8F5E9;
+  --color-petopia-green-accent: #81C784;
   
   --color-petopia-text: #333333;
 }
@@ -28,7 +33,7 @@
 body {
   font-family: var(--font-body);
   color: #333333;
-  background-color: #f8fafc;
+  background-color: #f7f6f2;
 }
 
 .font-brand {
@@ -43,3 +48,21 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* Sombras suaves de interfaz y tarjetas redondeadas */
+.petopia-card {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 4px 20px -2px rgba(23, 76, 88, 0.05);
+}
+
+.petopia-card-hover {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.petopia-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(23, 76, 88, 0.1);
+}
+
